@@ -1,4 +1,4 @@
-.app-wrapper {
+.appWrapper {
   display: grid;
   height: 100vh;
   grid-template-areas: 
@@ -12,4 +12,8 @@
 
 .app-main-content {
   grid-area: m;
+}
+
+.mainContentWrapper {
+  
 }

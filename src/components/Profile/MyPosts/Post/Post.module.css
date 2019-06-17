@@ -1,0 +1,16 @@
+.postWrapper {
+  display: flex;
+  padding: 10px;
+}
+
+.postWrapper img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.likeCount {
+  margin-left: 10px;
+  color: red;
+}
