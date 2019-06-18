@@ -6,11 +6,12 @@ import ProfileInfo from './ProfileInfo/ProfileInfo';
 import './../../App.css';
 import s from './Profile.module.css';
 
-const Profile = () => {
+const Profile = (props) => {
+
   return (
     <main className="app-main-content">
       <ProfileInfo/>
-      <MyPosts/>
+      <MyPosts posts={props.state.posts}/>
     </main>
   );
 }

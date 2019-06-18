@@ -7,23 +7,12 @@ import './../../App.css';
 import s from  './Dialogs.module.css';
 
 const Dialogs = (props) => {
-  let DialogsData = [
-    {id:1, name: 'Iozua'},
-    {id:2, name: 'Rikky'},
-    {id:3, name: 'Nua'}
-  ];
-  
-  let messagesData = [
-    {id:1, name: 'asdf asdf asdf asdf '},
-    {id:2, name: 'Ri1234r 1234  1234kky'},
-    {id:3, name: 'Nu 23 23 23rasd 23a'}
-  ];
 
-  let dialogsElements = DialogsData.map((dialog => {
+  let dialogsElements = props.state.dialogs.map((dialog => {
     return <DialogItem name={dialog.name} id={dialog.id}/>
   }));
 
-  let messagesElements = messagesData.map((message => {
+  let messagesElements = props.state.messages.map((message => {
     return <Messages name={message.message} id={message.id}/>
   }));
 
